@@ -1,5 +1,4 @@
 # Lab 1: Martin Monček
-
 ### De Morgan's laws
 
 1. Equations of all three versions of logic function f(c,b,a):
@@ -33,8 +32,8 @@ end architecture dataflow;
 ### Distributive laws
 
 1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
-
-   \includegrapgic {01-gates/distributive_law_waweforms.png}
+   ![Logic function](01-gates/distributive_law_waweforms.png)
+   
 
 2. Link to your public EDA Playground example:
 
