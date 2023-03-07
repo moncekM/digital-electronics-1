@@ -45,4 +45,5 @@
    
 3. Screenshot with simulated time waveforms for LED(7:4). Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![top_LED_testbanch](https://user-images.githubusercontent.com/94976093/223580061-1d8c7a24-04bb-4353-9a38-692f441a0558.png)
+
