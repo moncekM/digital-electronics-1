@@ -21,7 +21,7 @@
    | C | 1100 | 0 | 1 | 0 | 0 |
    | d | 1101 | 0 | 1 | 1 | 0 |
    | E | 1110 | 0 | 1 | 0 | 0 |
-   | F | 1111 | 0 | 1 | 1 | 1 |
+   | F | 1111 | 0 | 1 | 1 | 0 |
 
 2. Listing of LEDs(7:4) part of VHDL architecture from source file `top.vhd`. Try to write logic functions as simple as possible. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
@@ -43,12 +43,12 @@
                    or SW = "0010" 
                    or SW = "0100" 
                    or SW = "1000" 
-                   or SW = "1111" 
                    else '0';
    ```
    
    
 3. Screenshot with simulated time waveforms for LED(7:4). Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![top_LED_testbanch](https://user-images.githubusercontent.com/94976093/223580061-1d8c7a24-04bb-4353-9a38-692f441a0558.png)
+  
+![tb_top_LED](https://user-images.githubusercontent.com/94976093/223651473-d7f46c49-167f-4e11-8b13-ac747406adcd.png)
 
