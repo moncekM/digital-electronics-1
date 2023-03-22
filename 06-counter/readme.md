@@ -20,9 +20,7 @@
         sig_cnt <= sig_cnt + 1;
       else
         sig_cnt <= sig_cnt - 1;
-        -- TEST COUNTER DIRECTION HERE
-      end if;
-      
+      end if; 
       end if;
     end if;
     end process p_cnt_up_down;
@@ -37,4 +35,9 @@
 
 1. Image of the top layer structure including both counters, ie a 4-bit bidirectional counter from *Part 4* and a 12-bit counter with a 10 ms time base from *Experiments on your own*. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   ![your figure]()
+ ![Schematic_of_top_counters_alloutputs](https://user-images.githubusercontent.com/94976093/226716631-404f031f-8884-40a6-bb14-fbcda47d14c4.png)
+
+Also adding a detail view of implementation with a limited amount of outputs to detail view a wire structure of counters
+
+![Schematic_of_top_counters](https://user-images.githubusercontent.com/94976093/226717332-03309bd6-244f-4ec9-8c96-248ae8c1a5c0.png)
+
