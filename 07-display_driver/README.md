@@ -54,4 +54,13 @@
 
 1. Image of the 8-digit driver's block schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components, and internal signals!
 
-   ![your figure]()
+![schematic_8display_top_overal](https://user-images.githubusercontent.com/94976093/228317860-01335f60-c09e-4676-895c-add0f5d2f0a6.png)
+
+Also adding a detailed schematic of top-level entity to see insides a multiplexer:
+
+![schematic_8display_top_detail1](https://user-images.githubusercontent.com/94976093/228318596-ef5317fe-f991-4dd1-9c0a-301eb678fbdb.png)
+
+adding a detailed schematic of 8display_7seg entity to see insides and original source signal of entity:
+
+![schematic_8display_8disp_7seg](https://user-images.githubusercontent.com/94976093/228318884-b1031e89-ffd7-45f0-9dd2-c78d441915c8.png)
+
