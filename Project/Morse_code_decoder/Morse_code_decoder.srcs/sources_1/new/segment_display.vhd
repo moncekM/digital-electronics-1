@@ -38,9 +38,7 @@ begin
   -- Display is clear/blank if signal blank = 1.
   --------------------------------------------------------
 
-  p_7seg_decoder : process (blank, inp) is   --ak ma za sebou zavorku takteda sa spusta signal
-  --tak je to sensitivilis a teda ak aspon jeden zmeni hodnotu tak sa proces vykona,je to sekvencni signal
-  --je tu sktiktura a blank je rovne 1 tak sa nahra 1 
+  p_7seg_decoder : process (blank, inp) is  
 
   begin
 
@@ -106,8 +104,6 @@ begin
 
           seg <= "1000010"; -- d
         
-
-
         when "01000101" =>
 
           seg <= "0110000"; -- E
@@ -194,11 +190,11 @@ begin
           
         when "01011010" =>
 
-          seg <= "0010110"; -- Y 
+          seg <= "0010110"; -- Z
         
         when others =>
 
-          seg <= "0000000"; -- F                
+          seg <= "0000000"; -- all                
       end case;
 
     end if;

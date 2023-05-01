@@ -34,38 +34,19 @@ end edge;
 
 architecture Behavioral of edge is
 
-    signal s_sig_out : std_logic_vector(1 downto 0);
-    signal s_sig_in : std_logic;
-
-
 begin
+    
      p_edge : process(clk)   
     begin
         if rising_edge(clk) then
-           s_sig_in <= sig_in;
+          if(sig_in = '1')  then
+          r_out <= '1';
+          f_out <= '0';
+          else 
+          r_out <= '0';
+          f_out <= '1';
+          end if;
             end if;
     end process p_edge;
     
-   d_ff0 : entity work.d_ff_rst     
-        port map(
-            clk => clk,
-            rst => rst,
-            d => s_sig_in,
-            q => s_sig_out(1)
-        );
-        
-    d_ff1 : entity work.d_ff_rst
-        port map(
-            clk => clk,
-            rst => rst,
-            d => s_sig_out(1),
-            q => s_sig_out(0)
-        );
-   r_out <= s_sig_out(1) and not(s_sig_out(0));  
-    
-   f_out <= not(s_sig_out(1)) and s_sig_out(0); 
-   
-   
-
- 
 end architecture Behavioral;

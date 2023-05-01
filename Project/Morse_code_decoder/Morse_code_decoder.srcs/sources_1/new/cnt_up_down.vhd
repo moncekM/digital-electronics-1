@@ -57,7 +57,7 @@ begin
 
     if rising_edge(clk) then
       if (rst = '1') then           -- Synchronous reset
-        sig_cnt <= (others => '0'); -- Clear all bits, pretoze nevieme kolko ma signal count bitov a toto vyplna others
+        sig_cnt <= (others => '0'); -- Clear all bits,
       elsif (en = '1') then         -- Test if counter is enabled
       if(cnt_up ='1') then
         sig_cnt <= sig_cnt + 1;
@@ -71,7 +71,7 @@ begin
 
   end process p_cnt_up_down;
 
-  -- Output must be retyped from "unsigned" to "std_logic_vector"
+  -- Output must be retyped from unsigned to std_logic_vector
   cnt <= std_logic_vector(sig_cnt);
 
 end architecture behavioral;

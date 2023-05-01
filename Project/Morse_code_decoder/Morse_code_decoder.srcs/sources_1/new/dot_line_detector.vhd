@@ -23,7 +23,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity dot_line_detector is
     Port (
         cnt_i : in STD_LOGIC_VECTOR (7 downto 0);
-        decode_o : out std_logic
+        line : out std_logic;
+        dot : out std_logic
     );
 end dot_line_detector;
 
@@ -32,12 +33,18 @@ architecture Behavioral of dot_line_detector is
 begin
     p_dot_line_detector : process(cnt_i)
     begin
-        case cnt_i is
-            when "01010110" =>
-                decode_o <= '0';     
-            when others =>
-                decode_o <= '1';   
-                 
-        end case;
+        if(cnt_i >="10000000") then
+                dot <= '0';
+               line <= '1';
+        else if(cnt_i >="01010110" ) then
+                dot <= '1';
+               line <= '0';  
+        else if(cnt_i >="00000000") then
+                dot <= '0';
+               line <= '0';    
+         
+             end if;
+             end if;    
+             end if;
     end process p_dot_line_detector;
 end Behavioral;
